@@ -809,7 +809,7 @@ function jump () {
 }
 function Convert_Background () {
     if (bear.overlapsWith(change)) {
-        background = randint(1, 5)
+        background = 1
         if (background == 1) {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -935,6 +935,7 @@ function Convert_Background () {
                 `)
             bear.setPosition(5, 73)
             re_road()
+            background += 1
         } else if (background == 2) {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -1060,6 +1061,7 @@ function Convert_Background () {
                 `)
             bear.setPosition(5, 73)
             re_road()
+            background += 1
         } else if (background == 3) {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -1185,6 +1187,7 @@ function Convert_Background () {
                 `)
             bear.setPosition(5, 73)
             re_road()
+            background += 1
         } else if (background == 4) {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -1310,6 +1313,7 @@ function Convert_Background () {
                 `)
             bear.setPosition(5, 73)
             re_road()
+            background += 1
         } else {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -1435,6 +1439,7 @@ function Convert_Background () {
                 `)
             bear.setPosition(5, 73)
             re_road()
+            background += 1
         }
     }
 }
