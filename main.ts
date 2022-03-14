@@ -680,6 +680,7 @@ function role () {
         `, SpriteKind.Player)
     bear.setPosition(5, 73)
     controller.moveSprite(bear, 70, 0)
+    background = 1
     change = sprites.create(img`
         f f f f f f f f f f f f f f f f 
         f f f f f f f f f f f f f f f f 
@@ -809,7 +810,6 @@ function jump () {
 }
 function Convert_Background () {
     if (bear.overlapsWith(change)) {
-        background = 1
         if (background == 1) {
             scene.setBackgroundImage(img`
                 ................................................................................................................................................................
@@ -1443,8 +1443,8 @@ function Convert_Background () {
         }
     }
 }
-let background = 0
 let change: Sprite = null
+let background = 0
 let bullet: Sprite = null
 let left = 0
 let right = 0
